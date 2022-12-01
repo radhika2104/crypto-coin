@@ -34,7 +34,7 @@
   /* text-align: center; */
 }
 
-.heading {
+.home-heading {
   margin: 4rem 1rem 2rem 1rem;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr 1.5fr 1.5fr;
@@ -45,7 +45,7 @@
   color: var(--light-peach);
   /* text-align: center; */
 }
-.heading h3 {
+.home-heading h3 {
   background-color: #4a6494;
 }
 
@@ -92,4 +92,30 @@
 .coin-symbol {
   font-size: 0.7rem;
   opacity: 0.8;
+}
+
+.small-font {
+  font-size: 0.9rem;
+  /* font-weight: 500; */
+}
+
+@media (width<900px) {
+  .small-font {
+    font-size: 0.8rem;
+    /* font-weight: 500; */
+  }
+  @media (max-width: 700px) {
+    .exchange-row {
+      display: grid;
+      grid-template-columns: 0.6fr 2fr 1fr;
+    }
+    .coin-row {
+      display: grid;
+      grid-template-columns: 0.6fr 2fr 1fr;
+    }
+    .home-heading {
+      display: grid;
+      grid-template-columns: 0.6fr 2fr 1fr;
+    }
+  }
 }

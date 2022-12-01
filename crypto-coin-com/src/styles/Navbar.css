@@ -14,12 +14,13 @@ nav ul li {
   max-width: 1100px;
   margin: auto;
 }
-nav ul {
+nav ul,
+nav ul a {
   background-color: var(--offwhite);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   font-weight: 700;
   font-size: x-large;
 }
@@ -40,4 +41,31 @@ nav ul {
 span {
   background-color: var(--offwhite);
   color: var(--dark-color);
+}
+
+.nav-container a {
+  background-color: var(--offwhite);
+}
+
+nav ul a {
+  text-decoration: none;
+  color: initial;
+  color: var(--peach);
+}
+nav ul a:active {
+  text-decoration: none;
+  color: initial;
+  color: var(--dark-peach);
+  font-weight: bolder;
+}
+
+@media (width <500px) {
+  nav ul,
+  nav ul a {
+    font-size: 1.3rem;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
 }

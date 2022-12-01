@@ -5,6 +5,7 @@
   --peach: #ce7777;
   --light-peach: #e8c4c4;
   --offwhite: #f2e5e5;
+  --dark-peach: #961414;
 }
 * {
   margin: 0;
@@ -27,7 +28,7 @@ code {
     monospace;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .hide-mobile {
     display: none;
   }
